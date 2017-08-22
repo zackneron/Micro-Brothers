@@ -1,0 +1,157 @@
+/* Medium devices (desktops, 992px and up) --------------------------------- */
+@media (min-width: $medium-devices) {
+  /* Header ---------------------------------------------------------------- */
+  /* code here... */
+
+  .business-details {
+    font-size: 12px;
+    .fa {
+      font-size: 16px;
+    }
+
+    &__contact {
+      .contact-details {
+        padding-top: rem-calc(5);
+      }
+    }
+
+    &__social {
+      .fa {
+        max-width: 23px;
+      }
+    }
+
+    &__search {
+      text-align: left;
+    }
+  }
+
+  .navbar-header {
+    background: transparent;
+    display: none;
+  }
+
+  .navbar-nav>li {
+    padding-top: rem-calc(26);
+    padding-bottom: rem-calc(26);
+  }
+  .nav>li>a {
+    font-size: 15px;
+    padding-right: rem-calc(5);
+    padding-left: rem-calc(5);
+  }
+
+// Dropdown menu
+  .ubermenu-nav {
+    .ubermenu-submenu-drop {
+      margin-top: rem-calc(25);
+      margin-left: rem-calc(-280);
+      width: 970px;
+      display: none;
+
+        li.ubermenu-item-header {
+          max-width: 265px;
+          padding: rem-calc(0 20);
+          display: inline-block;
+
+            &:hover {
+              color: $white !important;
+              text-decoration: none;
+
+              a {border-bottom: none;}
+            }
+        }
+    }
+
+    li.ubermenu-has-submenu-drop:hover .ubermenu-submenu-drop {
+      display: inline-block !important;
+      position: absolute;
+    }
+  }
+// -------------------------- Mega Menu end here
+
+
+  /* Content --------------------------------------------------------------- */
+  /* code here... */
+
+  .banner-slider {
+    .content-wrapper__content--text {
+      margin-top: rem-calc(145);
+
+      div {
+        padding-top: rem-calc(50);
+      }
+    }
+    .title {
+      font-size: 30px;
+    }
+  }
+
+  .leadins-content {
+    .leadins-icon-wrapper {
+      width: 180px;
+      height: 180px;
+    }
+    .leadins-text {
+      h4 {font-size: 15px;}
+    }
+  }
+
+  .add-cart-section {
+    text-align: right;
+  }
+
+  // Sidebar section
+  .sidebar {
+    margin-top: 0;
+    &__video {
+      .video-wrapper {
+        max-width: 145px;
+        &:last-child {
+          margin-left: rem-calc(3);
+        }
+      }
+    }
+    input[type="submit"] {
+      max-width: 55%;
+      font-size: 13px;
+    }
+  }
+
+.page-title-header {
+  h1, h2 {margin-top: rem-calc(20);}
+}
+
+.main-content {
+  .form {
+    .gform_fields {
+      .gf_left_half {
+        width: 47%;
+      }
+      .gf_right_half {
+        width: 50%;
+      }
+    }
+    input[type="submit"] {
+      max-width: 40%;
+    }
+  }
+}
+
+  /* Footer ---------------------------------------------------------------- */
+  /* code here... */
+
+  .pre-footer {
+    h5 {
+      margin-top: 0;
+    }
+  }
+
+  .footer__copyright {
+    text-align: left;
+  }
+  .footer__badge {
+    text-align: right;
+  }
+
+}

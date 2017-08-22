@@ -1,0 +1,91 @@
+.pre-footer {
+  position: relative;
+  overflow: hidden;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+
+  .pre-footer-background {
+    min-height: 100%;
+  }
+
+  h4 {
+    font-family: $Nunito-Regular;
+    margin-bottom: rem-calc(20);
+  }
+  h5 {
+    text-transform: uppercase;
+    color: $green74;
+
+    a {
+      color: $green74;
+    }
+  }
+
+
+  &__container {
+    padding: rem-calc(55 0 45);
+
+    &--content {
+      margin-bottom: rem-calc(25);
+
+      img {
+        right: 0;
+        top: 30%;
+      }
+    }
+  }
+
+  .contact-header {
+    text-transform: uppercase;
+  }
+
+  &__suppliers {
+    background-color: $bleu49;
+
+    h4 {
+      margin-bottom: rem-calc(30);
+    }
+
+    .single-leadins {
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__details {
+    background-color: $blue36;
+    padding: rem-calc(40 0 55 0);
+  }
+
+  .sitemap-menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-transform: uppercase;
+
+      li {
+        margin-bottom: rem-calc(20);
+        a {
+          color: $bleu84;
+        }
+      }
+    }
+  }
+
+  .newsletter-form {
+    form {
+      margin-top: 0;
+
+      label {
+        display: none;
+      }
+    }
+  }
+}

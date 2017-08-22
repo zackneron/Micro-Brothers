@@ -1,0 +1,315 @@
+/* Global - Components ----------------------------------------------------- */
+.page-title-header {
+  margin-top: rem-calc(20);
+}
+.breadcrumbs {
+  margin-bottom: rem-calc(30);
+}
+.featured-image {
+  margin-bottom: rem-calc(30);
+  width: 100%;
+}
+.inline-image {
+  &-left {
+    margin: rem-calc(0 15 15 0);
+    float: left;
+  }
+  &-right {
+    margin: rem-calc(0 0 15 15);
+    float: right;
+  }
+}
+
+/* Global - Scroll Top Button ---------------------------------------------- */
+.scroll-top {
+  &--button {
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    font-size: rem-calc(20);
+    display: inline-block;
+    bottom: rem-calc(50);
+    right: rem-calc(10);
+    visibility: hidden;
+    cursor: pointer;
+    position: fixed;
+    z-index: 10;
+    opacity: 0;
+  }
+  &--visible,
+  &--fade-out,
+  .no-touch .scroll-top:hover {
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+  &--visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  &--fade-out {
+    opacity: 0.5;
+  }
+}
+
+/* Global - Navigation ----------------------------------------------------- */
+.business-details {
+  padding: rem-calc(5 0);
+  &__contact {
+
+    i {
+      min-width: rem-calc(20);
+    }
+  }
+  &__social {
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:not(:last-child) {
+      margin-right: rem-calc(0);
+    }
+  }
+}
+.navbar-default {
+  margin: 0;
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-collapse {
+    padding: 0;
+    border-color: transparent;
+  }
+}
+
+/* Global - Contact Form --------------------------------------------------- */
+.titan-contact-form {
+  margin-top: rem-calc(40);
+  input,
+  textarea {
+    margin-bottom: rem-calc(10);
+    border: 1px solid transparent;
+    @include border-radius(8px);
+    -webkit-appearance: none;
+    padding: rem-calc(5 8);
+    width: 100%;
+    color: $gray13;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  select {
+    margin-bottom: rem-calc(10);
+    border: 1px solid transparent;
+    @include border-radius(8px);
+    padding: rem-calc(5 8);
+    width: 100%;
+    color: $gray13;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  input[type="submit"] {
+    background-color: $green74;
+    text-transform: uppercase;
+    color: $white;
+    max-width: 55%;
+    font-family: $Nunito-Bold;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .gfield_required {
+    color: $error-red;
+  }
+  .gform_validation_container {
+    display: none;
+  }
+}
+
+/* Global - Footer --------------------------------------------------------- */
+.footer {
+  font-family: $font-default;
+  background-color: $green74;
+  margin-top: rem-calc(0);
+  font-size: rem-calc(12);
+  padding: rem-calc(32 0);
+  color: $blue36;
+  a {
+    color: $blue36;
+  }
+}
+.footer__copyright {
+  margin-bottom: rem-calc(5);
+}
+.footer__menu {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      border-left: 1px solid $green64;
+      padding: rem-calc(0 10);
+      list-style: none;
+      display: block;
+      float: left;
+      margin: 0;
+      &:first-child {
+        border-left: none;
+        padding-left: 0;
+      }
+    }
+  }
+}
+.footer__badge {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  &__prefix {
+    margin-right: rem-calc(10);
+  }
+  &__suffix {
+    margin-left: rem-calc(10);
+  }
+
+  img {
+    max-width: 150px;
+  }
+}
+
+/* Global Components - Slider ---------------------------------------------- */
+.banner-slider {
+  position: relative;
+  &__images-wrapper {
+    height: rem-calc(600);
+    margin-bottom: 0;
+    overflow: hidden;
+    &__image {
+      img {
+        position: relative;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__content-wrapper {
+    height: rem-calc(600);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    &__content {
+      display: block;
+      margin: rem-calc(0 40);
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .slick {
+    &-list,
+    &-track,
+    &-slide {
+      height: 100%;
+      z-index: 1;
+    }
+    &-arrow {
+      z-index: 2;
+    }
+    &-prev {
+      left: rem-calc(15);
+    }
+    &-next {
+      right: rem-calc(15);
+    }
+  }
+  .button-wrapper {
+    list-style-type: none;
+  }
+}
+
+/* Home Page - Leadins ----------------------------------------------------- */
+.leadin-item {
+  margin-bottom: rem-calc(20);
+  img {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+/* Testimonials Page ------------------------------------------------------- */
+.testimonial-item {
+  margin-top: rem-calc(30);
+  h2 {
+    margin-top: 0;
+  }
+  img {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+/* Services Page ----------------------------------------------------------- */
+.services-item {
+  margin-bottom: rem-calc(20);
+  img {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+/* Gallery Page ------------------------------------------------------------ */
+.chocolat-image {
+  display: block;
+  img {
+    margin-bottom: rem-calc(30);
+    display: inherit;
+  }
+}
+
+/* Accordion Styling--------------------------------------------------------- */
+.accordions {
+  .panel-group {
+    margin-top: rem-calc(30);
+  }
+  .panel-heading .glyphicon {
+    float: right;
+  }
+}
+
+/* Latest News Page  ------------------------------------------------------- */
+.news-item {
+  margin-bottom: rem-calc(20);
+  img {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+/* Contact Us Page --------------------------------------------------------- */
+.contact .titan-contact-form {
+  margin-top: 0;
+}
+.contact-details {
+  .contact-header {
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: rem-calc(20);
+  }
+  .google-map {
+    //margin-top: rem-calc(30);
+    height: rem-calc(240);
+    width: 100%;
+    border: 0;
+  }
+  &.hours p {
+    margin: 0;
+  }
+}

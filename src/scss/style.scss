@@ -1,0 +1,35 @@
+/* Variables --------------------------------------------------------------- */
+@import 'partials/_variables';
+
+/* Mixins ------------------------------------------------------------------ */
+@import 'partials/_mixins';
+
+/* Functions --------------------------------------------------------------- */
+@import 'partials/_functions';
+
+/* Template ---------------------------------------------------------------- */
+@import 'partials/_template';
+
+/* Components -------------------------------------------------------------- */
+@import 'partials/_components';
+
+/* Header ------------------------------------------------------------------ */
+@import 'partials/_header';
+
+/* Content ----------------------------------------------------------------- */
+@import 'partials/_content';
+
+/* Footer ------------------------------------------------------------------ */
+@import 'partials/_footer';
+
+/* XSMALL Devices (tablets, 480px and up) ---------------------------------- */
+@import 'partials/_xsmall-devices';
+
+/* SMALL Devices (tablets, 768px and up) ----------------------------------- */
+@import 'partials/_small-devices';
+
+/* MEDIUM Devices (desktops, 992px and up) --------------------------------- */
+@import 'partials/_medium-devices';
+
+/* LARGE Devices (large desktops, 1200px and up) --------------------------- */
+@import 'partials/_large-devices';

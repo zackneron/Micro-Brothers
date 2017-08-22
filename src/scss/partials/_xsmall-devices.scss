@@ -1,0 +1,224 @@
+/* Small devices (tablets, 480px and up) ----------------------------------- */
+
+@media (min-width: 0px) {
+  /* Header ---------------------------------------------------------------- */
+  /* code here... */
+  .business-details {
+    .fa {
+      font-size: 26px;
+    }
+
+    &__search {
+      text-align: right;
+    }
+  }
+
+  .navbar-header {
+    background: $blue30;
+  }
+  .navbar-nav>li {
+    padding-top: rem-calc(0);
+    padding-bottom: rem-calc(0);
+  }
+
+  // Nav menu dropdown
+  .ubermenu-nav {
+    .ubermenu-submenu-drop {
+        display: block;
+        margin-left: rem-calc(0);
+        margin-right: rem-calc(0);
+
+      li.ubermenu-item-header {
+        padding: rem-calc(0 10);
+        width: 100%;
+        text-transform: uppercase;
+        font-family: $Nunito-Bold;
+        a {
+          color: $blue36;
+          font-size: 15px;
+        }
+
+        .ubermenu-item-object-page {
+          a {
+            color: $black14;
+            font-family: $Nunito-Regular;
+            text-transform: none;
+          }
+
+          .btn {
+            color: $white;
+            text-transform: uppercase;
+            font-family: $Nunito-Bold;
+          }
+
+          .view-product {
+            color: $green74;
+            text-transform: uppercase;
+            font-family: $Nunito-Bold;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  // -------------------------- Mega Menu end here
+
+  /* Content --------------------------------------------------------------- */
+  /* code here... */
+  .banner-slider {
+    .content-wrapper__content--text {
+      //margin-top: rem-calc(26);
+
+      div {
+        padding-top: rem-calc(10);
+      }
+
+      .btn {
+        margin-top: rem-calc(20);
+      }
+    }
+
+    .title {
+      font-size: 25px;
+    }
+  }
+
+.page-title-header {
+  h1, h2 {margin-top: rem-calc(35);}
+}
+
+.main-content {
+  margin-bottom: rem-calc(70);
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: $Nunito-Bold;
+  }
+
+  h4 {font-size: 20px;}
+  h5 {font-size: 18px;}
+  h6 {font-size: 16px;}
+
+  &-text {
+    h1,h2,h3,h4,h5,h6 {
+      color: $green74;
+    }
+  }
+
+  // Testimonials
+  .content-wrapper {
+    padding-bottom: rem-calc(40);
+    margin-bottom: rem-calc(40);
+  }
+  .testimonial-person {
+    color: $blue36;
+    margin-bottom: 0;
+  }
+  .testimonial-person-location {
+    text-transform: uppercase;
+  }
+
+  // News
+  .news-item {
+    h4 {
+      text-transform: none;
+      margin: 0;
+      color: $blue36;
+      a {
+        color: $blue36;
+      }
+    }
+
+    h5 {
+      margin: 0;
+      color: $green74;
+      a {
+        color: $green74;
+      }
+    }
+  }
+
+  // Industry Partners
+  .industry-partners {
+    h5 {
+      margin-bottom: rem-calc(20);
+    }
+  }
+
+  .products {
+    img {
+      margin-bottom: 0;
+    }
+    h5 {
+      margin-bottom: rem-calc(20);
+    }
+
+    .thumbnail {
+      max-width: 260px;
+      .caption {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .products-single {
+    .product-thumb-xs {
+      margin-right: rem-calc(10);
+      margin-bottom: rem-calc(10);
+      cursor: pointer;
+      width: 111px;
+    }
+  }
+
+  // Contact
+  .form {
+    .gform_fields {
+      .gf_left_half,
+      .gf_right_half {
+        width: 100%;
+      }
+    }
+    input[type="submit"] {
+      max-width: 100%;
+    }
+  }
+}
+
+// Sidebar section
+.sidebar {
+  margin-top: rem-calc(30);
+  &__video {
+    .video-wrapper {
+      &:last-child {
+        margin-left: rem-calc(10);
+      }
+    }
+  }
+
+  input[type="submit"] {
+    max-width: 100%;
+  }
+}
+
+  /* Footer ---------------------------------------------------------------- */
+  /* code here... */
+
+  .pre-footer {
+    h5 {
+      margin-top: rem-calc(10);
+    }
+  }
+
+  .footer__copyright,
+  .footer__badge {
+    text-align: center;
+  }
+
+}
+
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .MIR-logo {
+    width: 190px;
+  }
+}

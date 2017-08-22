@@ -1,0 +1,77 @@
+/* Large devices (large desktops, 1200px and up) --------------------------- */
+@media (min-width: $large-devices) {
+  /* Header ---------------------------------------------------------------- */
+  /* code here... */
+
+  .business-details {
+    font-size: 15px;
+
+    &__contact {
+      .contact-details {
+        padding-top: 0;
+      }
+    }
+
+    &__social {
+      .fa {
+        max-width: 29px;
+      }
+    }
+  }
+
+  .nav>li>a {
+    font-size: 16px;
+    padding-right: rem-calc(15);
+    padding-left: rem-calc(15);
+  }
+
+  // Dropdown menu
+  .ubermenu-nav {
+    .ubermenu-submenu-drop {
+      width: 1100px;
+    }
+  }
+// -------------------------- Mega Menu end here
+
+  /* Content --------------------------------------------------------------- */
+  /* code here... */
+
+  .leadins-content {
+    .leadins-icon-wrapper {
+      width: 193px;
+      height: 193px;
+    }
+    .leadins-text {
+      h4 {font-size: 20px;}
+    }
+  }
+
+  // Sidebar section
+
+  .sidebar {
+    &__video {
+      .video-wrapper {
+        max-width: 166px;
+        &:last-child {
+          margin-left: rem-calc(25);
+        }
+      }
+    }
+    input[type="submit"] {
+      font-size: 16px;
+    }
+  }
+
+  /* Footer ---------------------------------------------------------------- */
+  /* code here... */
+}
+
+
+
+@media (min-width: 1201px) {
+  .nav>li>a {
+    font-size: 16px;
+    padding-right: rem-calc(15);
+    padding-left: rem-calc(15);
+  }
+}
